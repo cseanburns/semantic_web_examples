@@ -3,75 +3,75 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Examples</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <h1>Media examples</h1>
-    <nav>
-        <h2>Navigation</h2>
-        <ol>
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="news.html">News Page</a></li>
-        </ol>
-    </nav>
-    
-    <h2>The <code>video</code> element</h2>
-
-    <video controls muted="true" width="900">
-        <source src="media/owl.webm" type="video/webm">
-        <source src="media/owl.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <h2>The <code>element</code> element</h2>
-
-    <audio controls>
-        <source src="media/semantic.mp3" type="audio/mpeg">
-        <source src="media/semantic.ogg" type="audio/ogg">
-        Your browser does not support the audio tag.
-    </audio>
-
-    <h2>The <code>img</code> element</h2>
-
-    <img src="media/walking_bridge.jpg"
-    alt="A walking bridge over a stream"
-    width="673"
-    height="378">
-
-    <h2>The <code>picture</code> element</h2>
-
-    <picture>
-        <source srcset="media/walking_bridge_small.jpg" media="(max-width: 672px)">
-        <source srcset="media/walking_bridge_big.jpg" media="(min-width: 673px)">
-        <img src="media/walking_bridge.jpg" alt="A walking bridge over a stream">
-    </picture>
-
-    <h2>The <code>figure</code> element</h2>
-
-    <figure>
-        <img src="media/car_plot.png" alt="A plot illustrating the relationship between car weight and car gas mileage">
-        <figcaption>A figure illustrating the relationship between weight of vehicle and gas mileage</figcaption>
-    </figure>
-
-    <h2>The <code>iframe</code> element</h2>
-
-    <h3>YouTube Video Example</h3>
-
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/5fYeKiebpuo?si=QcvAjF13AjhGkHMq"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
-
-    <h3>HTML Page Example</h3>
-
-    <iframe width="400" height="400"
-        src="media/inner_frame.html"
-    </iframe>
-
-
-
     <body>
+        <h1>Media examples</h1>
+        <nav>
+            <h2>Navigation</h2>
+            <ol>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="news.html">News Page</a></li>
+            </ol>
+        </nav>
+        
+        <h2>The <code>video</code> element</h2>
+
+        <video controls muted width="900">
+            <source src="media/owl.webm" type="video/webm">
+            <source src="media/owl.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>The <code>audio</code> element</h2>
+
+        <audio controls>
+            <source src="media/semantic.mp3" type="audio/mpeg">
+            <source src="media/semantic.ogg" type="audio/ogg">
+            Your browser does not support the audio tag.
+        </audio>
+
+        <h2>The <code>img</code> element</h2>
+
+        <img src="media/walking_bridge.jpg"
+            alt="A walking bridge over a stream"
+            width="673"
+            height="378">
+
+        <h2>The <code>picture</code> element</h2>
+
+        <picture>
+            <source srcset="media/walking_bridge_small.jpg" media="(max-width: 672px)">
+            <source srcset="media/walking_bridge_big.jpg" media="(min-width: 673px)">
+            <img src="media/walking_bridge.jpg" alt="A walking bridge over a stream">
+        </picture>
+
+        <h2>The <code>figure</code> element</h2>
+
+        <figure>
+            <img src="media/car_plot.png" alt="A plot illustrating the relationship between car weight and car gas mileage">
+            <figcaption>A figure illustrating the relationship between weight of vehicle and gas mileage</figcaption>
+        </figure>
+
+        <h2>The <code>iframe</code> element</h2>
+
+        <h3>YouTube Video Example</h3>
+
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/5fYeKiebpuo?si=QcvAjF13AjhGkHMq"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+
+        <h3>HTML Page Example</h3>
+
+        <iframe width="400" height="400"
+            src="media/inner_frame.html">
+        </iframe>
+    </body>
+</html>

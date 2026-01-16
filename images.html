@@ -94,6 +94,12 @@ img {
 	margin-left: 5px;
 }
 
+.float_demo::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .linear {
     padding: 50px;
     background: linear-gradient(white, black);
@@ -115,6 +121,10 @@ img {
 
 .opacity_med {
     opacity: 0.5;
+}
+
+.opacity_high {
+    opacity: 1;
 }
 
 .fruit_basket {
@@ -219,8 +229,9 @@ img {
 			laborum.</p>
 
 			<h3>Float Left</h3>
-			<img class="left_float" src='media/box_circle.png' alt='A drawing of a box in a circle'>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            <div class="float_demo">
+			    <img class="left_float" src='media/box_circle.png' alt='A drawing of a box in a circle'>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 			culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
@@ -232,11 +243,12 @@ img {
 			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 			cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 			laborum.</p>
-            <br>
+            </div>
 
 			<h3>Float Right</h3>
-			<img class="right_float" src='media/box_circle.png' alt='A drawing of a box in a circle'>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            <div class="float_demo">
+			    <img class="right_float" src='media/box_circle.png' alt='A drawing of a box in a circle'>
+                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 			culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
@@ -248,6 +260,7 @@ img {
 			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 			cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 			laborum.</p>
+            </div>
 
             <h2>Gradients</h2>
             <h3>Linear Gradient</h3>
@@ -259,9 +272,11 @@ img {
 
             <h2>Opacity</h2>
             <h3>High Opacity</h3>
-            <img class="opacity_low" src='media/box_circle.png' alt='A drawing of a box in a circle'>
+            <img class="opacity_high" src='media/box_circle.png' alt='A drawing of a box in a circle'>
             <h3>Medium Opacity</h3>
             <img class="opacity_med" src='media/box_circle.png' alt='A drawing of a box in a circle'>
+            <h3>Low Opacity</h3>
+            <img class="opacity_low" src='media/box_circle.png' alt='A drawing of a box in a circle'>
 
             <h2>List Styles</h2>
             <h3>Standard Unordered List</h3>

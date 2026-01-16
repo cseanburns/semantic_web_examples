@@ -1,4 +1,16 @@
 html {
     font-family: sans-serif;
     font-style: normal;
-  }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.green {
+    color: green;
+}
