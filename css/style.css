@@ -1,16 +1,14 @@
 html {
-    font-family: sans-serif;
-    font-style: normal;
+    /* font-family: sans-serif; */
+    /* font-style: normal; */
 }
 
 .bold {
     font-weight: bold;
+    color: red;
 }
 
 .italics {
     font-style: italic;
-}
-
-.green {
-    color: green;
+    color: blue;
 }

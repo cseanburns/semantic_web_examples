@@ -13,9 +13,9 @@
             <nav>
                 <h2>Navigation</h2>
                 <ol>
-                    <li><a href="media.html">Media Page</a></li>
-                    <li><a href="news.html">News Page</a></li>
-                    <li><a href="tables_forms.html">Example Table and Forms</a></li>
+                    <li id="media_page"><a href="media.html">Media Page</a></li>
+                    <li id="news_page"><a href="news.html">News Page</a></li>
+                    <li id="tables_forms_page"><a href="tables_forms.html">Example Table and Forms</a></li>
                 </ol>
             </nav>
         </header>
@@ -34,21 +34,36 @@
                     </nav>
                 <h2>Downloading Debian and Ubuntu</h2>
                 </header>
-                <aside>Debian was founded in 1993. Ubuntu is a derivative of Debian.</aside>
-                <p>To download Debian,
-                    visit <a href="https://www.debian.org" target="_blank" rel="noopener noreferrer" title="Debian Rules">Download Debian.</a></p>
 
-                <p>To download Ubuntu, visit <a href="https://ubuntu.com" target="_blank" rel="noopener noreferrer">Download Ubuntu.</a></p>
+                <aside>Debian was founded in 1993. Ubuntu is a derivative of Debian.</aside>
+
+                <p>To download <span class="bold">Debian</span>,
+                    visit <a href="https://www.debian.org" target="_blank" rel="noopener noreferrer" title="Debian Rules">Download Debian.</a>
+                </p>
+
+                <p>To download <span class="italics">Ubuntu</span>, visit <a href="https://ubuntu.com" target="_blank" rel="noopener noreferrer">Download Ubuntu.</a></p>
 
                 <p>This is an example of a <em>descendent element</em>.</p>
 
                 <h3 id="Debian_VM">Installing Debian in a Virtual Machine</h3>
+                <p>To install <span class="bold">Debian</span> in a virtual machine, follow these instructions:</p>
+                <ol>
+                    <li>Download a Debian ISO</li>
+                    <li>Download and Install VM Software</li>
+                    <li>etc.</li>
+                </ol>
                 <h3 id="Ubuntu_VM">Installing Ubuntu in a Virtual Machine</h3>
+                <p>To install <span class="italics">Ubuntu</span> in a virtual machine, follow these instructions:</p>
             </section>
             
             <section>
                 <header>
                     <h2>Updating Your Distributions</h2>
+                    <p>Run the following commands in either Debian or Ubuntu to update them:</p>
+                    <code>
+                        sudo apt update<br>
+                        sudo apt upgrade
+                    </code>
                 </header>
             </section>
         </article>
@@ -56,14 +71,13 @@
         <article> 
             <header>
                 <h2>Introduction to the Bash Shell</h2>
-                <h3>The Command Line</h3>
+                <h3>The Command Line (CLI)</h3>
+                <p>In the CLI, we can perform the following tasks:</p>
+                <ul>
+                    <li>List files: <code>ls</code></li>
+                    <li>Create folders: <code>mkdir [folder name]</code></li>
+                </ul>
             </header>
-        
-            <section>
-                <header>
-                    <h2>Knowing Where You Are</h2>
-                </header>
-            </section>
         </article>
         
         <footer>
