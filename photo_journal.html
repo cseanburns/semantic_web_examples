@@ -8,17 +8,31 @@
 		<meta name="keywords" content="photos, journal, stories">
 		<title>My Photo Journal</title>
 		<style>
+
 html {
+	margin: auto;
+	width: 75%;
 	font-family: serif;
 	font-size: 100%;
 }
 
-.testing {
-	text-decoration: underline wavy red 2px;
-	font-weight: bold;
+main {
+	padding: 5px;
+	color: black;
 }
 
-h1, h2, h3 {
+img {
+	border: 1px solid black;
+	width: 300px;
+	height: 400px;
+	width: 200px;
+	height: 150px;
+	float: right;
+	margin-right: 10px;
+	opacity: 0.5;
+}
+
+h1, h2 {
 	font-family: sans-serif;
 	text-align: center;
 	text-transform: capitalize;
@@ -26,16 +40,24 @@ h1, h2, h3 {
 
 p {
 	line-height: 1.5;
-	text-align: justify;
 	text-indent: 2rem;
 	font-size: 1.2rem;
+	
 }
 
+.testing {
+	text-decoration: underline wavy red 2px;
+}
+
+.bold {
+	font-weight: bold;
+}
 
 		</style>
 
 	</head>
 	<body>
+		<main>
 
 		<h1>my photo journal</h1>
 		
@@ -53,7 +75,7 @@ p {
 		We had never seen a rainbow so small and
 		focused in such a small area of the sky.</p>
 
-		<p>A few minutes later, we dropped my oldest off at rehearsals, and
+		<p class="bold">A few minutes later, we dropped my oldest off at rehearsals, and
 		then we drove away.
 		By the time we had circled back, the rainbow was gone.
 		My children had learned the word <i>ephemeral</i> recently, and
@@ -69,6 +91,22 @@ p {
 		but sometimes it's ready when we arrive.
 		Then we eat and play board or card games, or
 		if the weather is good, we go to the park.</p>
+
+		<ol>
+			<li>Apples
+			<ul>
+				<li>Honeycrisp</li>
+				<li>Fuji</li>
+			</ul>
+			<li>Bananas
+			<ol>
+				<li>Cavendish</li>
+				<li>Plaintain</li>
+			</ol>
+			</li>
+			<li>Watermelon</li>
+		</ol>
 	
+		</main>
 	</body>
 </html>
