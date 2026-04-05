@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Images and Figures</title>
+        <link rel="stylesheet" href="../../../css/examples.css">
+    </head>
+    <body>
+        <header>
+            <p class="eyebrow">Lesson 2e Example</p>
+            <h1>Responsive Images and Figures</h1>
+            <nav>
+                <ul class="inline-list">
+                    <li><a href="index.html">Lesson index</a></li>
+                    <li><a href="../../../index.html">Examples index</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="grid">
+            <section class="card">
+                <h2>Image</h2>
+                <img src="../../../media/walking_bridge.jpg" alt="A walking bridge over a stream" width="673" height="378">
+            </section>
+
+            <section class="card">
+                <h2>Picture</h2>
+                <picture>
+                    <source srcset="../../../media/walking_bridge_small.jpg" media="(max-width: 672px)">
+                    <source srcset="../../../media/walking_bridge_big.jpg" media="(min-width: 673px)">
+                    <img src="../../../media/walking_bridge.jpg" alt="A walking bridge over a stream">
+                </picture>
+            </section>
+
+            <section class="card">
+                <h2>Figure</h2>
+                <figure>
+                    <img src="../../../media/car_plot.png" alt="A plot illustrating the relationship between car weight and car gas mileage">
+                    <figcaption>A figure illustrating the relationship between vehicle weight and gas mileage.</figcaption>
+                </figure>
+            </section>
+        </main>
+    </body>
+</html>

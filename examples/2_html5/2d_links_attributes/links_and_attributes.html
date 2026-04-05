@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Links and Attributes</title>
+        <link rel="stylesheet" href="../../../css/examples.css">
+    </head>
+    <body>
+        <header>
+            <p class="eyebrow">Lesson 2d Example</p>
+            <h1>Links and Attributes</h1>
+            <nav>
+                <ul class="inline-list">
+                    <li><a href="index.html">Lesson index</a></li>
+                    <li><a href="../../../index.html">Examples index</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="grid">
+            <section class="card">
+                <h2>Relative Links</h2>
+                <p><a href="../2b_section_elements/section_elements_layout.html">Visit the section elements example</a></p>
+                <p><a href="../2f_tables_forms/tables_and_forms.html">Visit the tables and forms example</a></p>
+            </section>
+
+            <section class="card">
+                <h2>External Links</h2>
+                <p><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" title="MDN Web Docs">Open MDN in a new tab</a></p>
+                <p><a href="https://html.spec.whatwg.org/" rel="external">Read the HTML standard</a></p>
+            </section>
+
+            <section class="card">
+                <h2>Download and Utility Attributes</h2>
+                <p><a href="../../../media/box_circle.svg" download>Download the SVG asset</a></p>
+                <p><a href="#notes" aria-describedby="attribute-note">Jump to the notes section</a></p>
+                <p id="attribute-note">This link uses an ARIA description to provide context.</p>
+            </section>
+        </main>
+
+        <section id="notes" class="note">
+            <p>Common teaching points here are the difference between relative and absolute URLs and when to use attributes like <code>target</code>, <code>rel</code>, <code>title</code>, and <code>download</code>.</p>
+        </section>
+    </body>
+</html>

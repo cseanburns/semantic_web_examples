@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List Style Examples</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0 auto;
+                max-width: 72rem;
+                padding: 2rem 1rem 4rem;
+            }
+
+            a {
+                color: #144b7d;
+            }
+
+            .grid {
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+            }
+
+            .sample {
+                padding: 1rem;
+                border: 1px solid #333;
+            }
+
+            .inside {
+                list-style-position: inside;
+            }
+
+            .roman-upper {
+                list-style-type: upper-roman;
+            }
+
+            .roman-lower {
+                list-style-type: lower-roman;
+            }
+
+            .alpha-lower {
+                list-style-type: lower-alpha;
+            }
+
+            .vulcan {
+                list-style-type: "\1F596";
+            }
+
+            .apple {
+                list-style-image: url("../../../media/apple.webp");
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="index.html">Lesson index</a> | <a href="../../../index.html">Examples index</a></p>
+        <h1>List Style Examples</h1>
+
+        <section class="grid">
+            <div class="sample">
+                <h2>Default List</h2>
+                <ul>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Watermelon</li>
+                </ul>
+            </div>
+
+            <div class="sample">
+                <h2>Inside Position</h2>
+                <ul class="inside">
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Watermelon</li>
+                </ul>
+            </div>
+
+            <div class="sample">
+                <h2>Upper Roman</h2>
+                <ol class="roman-upper">
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Watermelon</li>
+                </ol>
+            </div>
+
+            <div class="sample">
+                <h2>Lower Roman</h2>
+                <ol class="roman-lower">
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Watermelon</li>
+                </ol>
+            </div>
+
+            <div class="sample">
+                <h2>Lower Alpha</h2>
+                <ol class="alpha-lower">
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Watermelon</li>
+                </ol>
+            </div>
+
+            <div class="sample">
+                <h2>Custom Marker</h2>
+                <ul class="vulcan">
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Watermelon</li>
+                </ul>
+            </div>
+
+            <div class="sample">
+                <h2>List Image</h2>
+                <ul class="apple">
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Watermelon</li>
+                </ul>
+            </div>
+        </section>
+    </body>
+</html>

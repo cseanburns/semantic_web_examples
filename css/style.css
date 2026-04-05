@@ -22,3 +22,7 @@ section {
 .italics {
     font-style: italic;
 }
+
+.green {
+    color: green;
+}

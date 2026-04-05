@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex Example: Two Column Layout</title>
+        <style>
+            html {
+                font-size: 100%;
+            }
+
+            header {
+                border-bottom: 2px black solid;
+                text-align: center;
+            }
+
+            section {
+                display: flex;
+                gap: 50px;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+
+            article {
+                margin: auto;
+                flex: 1 1 300px;
+            }
+
+            footer {
+                border-top: 2px black solid;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Main Title</h1>
+        </header>
+
+        <section>
+            <article>
+                <h2>Article Title 1</h2>
+                <p>This is some text.</p>
+            </article>
+            <article>
+                <h2>Article Title 2</h2>
+                <p>This is more text.</p>
+            </article>
+        </section>
+
+        <footer>
+            <h2>This is a footer</h2>
+        </footer>
+    </body>
+</html>

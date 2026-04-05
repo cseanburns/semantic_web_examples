@@ -3,86 +3,44 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Semantic Web Examples</title>
-        <link rel="stylesheet" href="css/style.css">
+        <title>Semantic Web Examples by Lesson</title>
+        <link rel="stylesheet" href="css/examples.css">
     </head>
-    
     <body>
         <header>
-            <h1>Introduction to Linux Systems Administration</h1>
-            <nav>
-                <h2>Navigation</h2>
-                <ol>
-                    <li id="media_page"><a href="media.html">Media Page</a></li>
-                    <li id="news_page"><a href="news.html">News Page</a></li>
-                    <li id="tables_forms_page"><a href="tables_forms.html">Example Table and Forms</a></li>
-                </ol>
-            </nav>
+            <p class="eyebrow">Examples Catalog</p>
+            <h1>Semantic Web Examples Organized by Lesson</h1>
+            <p>The examples in this repository are grouped by lesson so they are easier to browse and maintain.</p>
         </header>
-    
-        <article>
-            <header>
-                <h2 id="one">The Linux Debian and Ubuntu Distributions</h2>
-                <h3 id="two">Getting Started</h3>
-            </header>
-            
-            <section>
-                <header>
-                    <nav>
-                        <a href="#Debian_VM">Jump to Debian Section</a><br>
-                        <a href="#Ubuntu_VM">Jump to Ubuntu Section</a>
-                    </nav>
-                <h2>Downloading Debian and Ubuntu</h2>
-                </header>
 
-                <aside>Debian was founded in 1993. Ubuntu is a derivative of Debian.</aside>
-
-                <p>To download <span class="bold">Debian</span>,
-                    visit <a href="https://www.debian.org" target="_blank" rel="noopener noreferrer" title="Debian Rules">Download Debian.</a>
-                </p>
-
-                <p>To download <span class="italics">Ubuntu</span>, visit <a href="https://ubuntu.com" target="_blank" rel="noopener noreferrer">Download Ubuntu.</a></p>
-
-                <p>This is an example of a <em>descendent element</em>.</p>
-
-                <h3 id="Debian_VM">Installing Debian in a Virtual Machine</h3>
-                <p>To install <span class="bold">Debian</span> in a virtual machine, follow these instructions:</p>
-                <ol>
-                    <li>Download a Debian ISO</li>
-                    <li>Download and Install VM Software</li>
-                    <li>etc.</li>
+        <main class="grid">
+            <section class="card">
+                <h2>HTML5 and the Web</h2>
+                <ol class="lesson-list">
+                    <li><a href="examples/2_html5/2a_document_structure_metadata/index.html">2a. Document Structure and Metadata</a></li>
+                    <li><a href="examples/2_html5/2b_section_elements/index.html">2b. Section Elements</a></li>
+                    <li><a href="examples/2_html5/2c_grouping_text_semantics/index.html">2c. Grouping and Text-Level Semantic Elements</a></li>
+                    <li><a href="examples/2_html5/2d_links_attributes/index.html">2d. Links and Attributes</a></li>
+                    <li><a href="examples/2_html5/2e_embedded_content/index.html">2e. Images and Multimedia</a></li>
+                    <li><a href="examples/2_html5/2f_tables_forms/index.html">2f. Tables and Forms</a></li>
                 </ol>
-                <h3 id="Ubuntu_VM">Installing Ubuntu in a Virtual Machine</h3>
-                <p>To install <span class="italics">Ubuntu</span> in a virtual machine, follow these instructions:</p>
             </section>
-            
-            <section>
-                <header>
-                    <h2>Updating Your Distributions</h2>
-                    <p>Run the following commands in either Debian or Ubuntu to update them:</p>
-                    <code>
-                        sudo apt update<br>
-                        sudo apt upgrade
-                    </code>
-                </header>
+
+            <section class="card">
+                <h2>CSS3 and Web Design</h2>
+                <ol class="lesson-list">
+                    <li><a href="examples/3_css3/3a_syntax_selectors/index.html">3a1. Syntax and Selectors</a></li>
+                    <li><a href="examples/3_css3/3a_colors_units_measurements/index.html">3a2. Colors and Units of Measurement</a></li>
+                    <li><a href="examples/3_css3/3b_box_model/index.html">3b1. Margins, Borders, Padding, and Sizing</a></li>
+                    <li><a href="examples/3_css3/3c_typography_font_styles/index.html">3c. Typography and Font Styles</a></li>
+                    <li><a href="examples/3_css3/3d_images_lists_backgrounds/index.html">3d. Images, Lists, and Backgrounds</a></li>
+                    <li><a href="examples/3_css3/3e_flexbox/index.html">3e1. Flexbox Basics</a></li>
+                </ol>
             </section>
-        </article>
-        
-        <article> 
-            <header>
-                <h2>Introduction to the Bash Shell</h2>
-                <h3>The Command Line (CLI)</h3>
-                <p>In the CLI, we can perform the following tasks:</p>
-                <ul>
-                    <li>List files: <code>ls</code></li>
-                    <li>Create folders: <code>mkdir [folder name]</code></li>
-                </ul>
-            </header>
-        </article>
-        
-        <footer>
-            <address>
-            </address>
-        </footer>
+        </main>
+
+        <section class="note">
+            <p>Legacy filenames in the repository root and older subdirectories remain as thin redirect pages so older course links still resolve.</p>
+        </section>
     </body>
 </html>

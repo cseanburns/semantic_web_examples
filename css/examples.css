@@ -1,0 +1,90 @@
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #1d1d1d;
+    background: #faf7f0;
+}
+
+header,
+main,
+section,
+article,
+nav,
+footer {
+    margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+a {
+    color: #144b7d;
+}
+
+.eyebrow {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #6a5328;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid #d6ccb7;
+    background: #fffdf8;
+}
+
+.card h3,
+.card h2 {
+    margin-top: 0;
+}
+
+.note {
+    padding: 0.75rem 1rem;
+    border-left: 4px solid #6a5328;
+    background: #f4ebda;
+}
+
+.inline-list {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.inline-list a {
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    border: 1px solid #d6ccb7;
+    background: #fffdf8;
+    text-decoration: none;
+}
+
+.lesson-list {
+    padding-left: 1.25rem;
+}
+
+.lesson-list li {
+    margin-bottom: 0.5rem;
+}

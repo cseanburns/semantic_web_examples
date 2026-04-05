@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object Fit and Position</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0 auto;
+                max-width: 72rem;
+                padding: 2rem 1rem 4rem;
+            }
+
+            a {
+                color: #144b7d;
+            }
+
+            .grid {
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+            }
+
+            figure {
+                margin: 0;
+                padding: 1rem;
+                border: 1px solid #333;
+            }
+
+            img {
+                border: 1px solid #333;
+                background: silver;
+                width: 100%;
+                height: 16rem;
+            }
+
+            .fill {
+                object-fit: fill;
+            }
+
+            .contain {
+                object-fit: contain;
+            }
+
+            .cover {
+                object-fit: cover;
+            }
+
+            .none {
+                object-fit: none;
+            }
+
+            .scale-down {
+                object-fit: scale-down;
+            }
+
+            .position-top {
+                object-fit: none;
+                object-position: 50% -50px;
+            }
+
+            .position-left {
+                object-fit: none;
+                object-position: -50px 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="index.html">Lesson index</a> | <a href="../../../index.html">Examples index</a></p>
+        <h1>Object Fit and Position</h1>
+
+        <section class="grid">
+            <figure>
+                <img class="fill" src="../../../media/box_circle.png" alt="A drawing of a box in a circle">
+                <figcaption><code>object-fit: fill</code></figcaption>
+            </figure>
+            <figure>
+                <img class="contain" src="../../../media/box_circle.png" alt="A drawing of a box in a circle">
+                <figcaption><code>object-fit: contain</code></figcaption>
+            </figure>
+            <figure>
+                <img class="cover" src="../../../media/box_circle.png" alt="A drawing of a box in a circle">
+                <figcaption><code>object-fit: cover</code></figcaption>
+            </figure>
+            <figure>
+                <img class="none" src="../../../media/box_circle.png" alt="A drawing of a box in a circle">
+                <figcaption><code>object-fit: none</code></figcaption>
+            </figure>
+            <figure>
+                <img class="scale-down" src="../../../media/box_circle.png" alt="A drawing of a box in a circle">
+                <figcaption><code>object-fit: scale-down</code></figcaption>
+            </figure>
+            <figure>
+                <img class="position-top" src="../../../media/box_circle.png" alt="A drawing of a box in a circle">
+                <figcaption>Object position shifted upward</figcaption>
+            </figure>
+            <figure>
+                <img class="position-left" src="../../../media/box_circle.png" alt="A drawing of a box in a circle">
+                <figcaption>Object position shifted left</figcaption>
+            </figure>
+        </section>
+    </body>
+</html>
